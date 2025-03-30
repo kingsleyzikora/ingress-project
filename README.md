@@ -1,19 +1,20 @@
-                         INGRESS HANDS-ON
-To enhance the security of our application's exposure, we will implement the NGINX Ingress Controller in place of a traditional load balancer, utilizing HTTPS for secure communication. The Ingress Controller efficiently routes incoming traffic to the appropriate backend services, ensuring a robust and secure architecture.
-To accomplish this, the following steps and guidelines have been outlined below. Additionally, the corresponding commands and file structures are provided for reference
+# Secured HTTPS Connection Using Kubernetes Ingress
 
+This project demonstrates how to enhance the security of your application by creating a secured HTTPS connection using Kubernetes. By implementing the NGINX Ingress Controller and HTTPS protocol, this project provides a robust and scalable architecture for managing traffic efficiently and securely.
 
-OVERVIEW OF THE  7 PHASES
-•	PHASE 1: Purchasing of Domain name from any hosting platform
-•	PHASE 2: Configuring Nameservers with AWS Route53 and GoDaddy
-•	PHASE 3:  Create your EKS cluster                                
-•	PHASE 4: AWS certificate manager setup
-•	PHASE 5: Deploy Nginx ingress controller
-•	PHASE 6: AWS loadbalancer setup
-•	PHASE 7: Deploying the Ingress Yaml File
+## Overview of Phases
+This guide covers the following seven phases for setting up a secured HTTPS connection:
 
+1. **Purchasing a Domain Name**
+2. **Configuring Nameservers with AWS Route53 and GoDaddy**
+3. **Creating the EKS Cluster**
+4. **AWS Certificate Manager Setup**
+5. **Deploying the NGINX Ingress Controller**
+6. **AWS Load Balancer Configuration**
+7. **Deploying the Ingress YAML File**
 
-	Note : To have all the files and folders to carry out this hands-on, clone this repo url below
+For detailed instructions, clone the repository:
+
 ```bash
 git clone https://github.com/kingsleyzikora/ingress-project.git
 ```
