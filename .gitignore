@@ -1,13 +1,3 @@
-# Ignore specific image
-image-to-ignore.jpg
-
-# Ignore all JPGs
-*.jpg
-
-# Ignore folder
-images/private/
-
-
 image-one.jpg
 image-two.jpg
 image-three.jpg
