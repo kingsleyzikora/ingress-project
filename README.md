@@ -33,7 +33,7 @@ git clone https://github.com/kingsleyzikora/ingress-project.git
 ### Phase 1: Purchasing a Domain Name
 Purchase your domain name from platforms like GoDaddy, click here [text](https://www.godaddy.com/en-ph). 
 
-![alt text](IMG-20241017-WA0023.jpg)
+![alt text](image-one.jpg)
 
 Follow the provided step-by-step instructions in the document for setup and configuration.
 
