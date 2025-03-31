@@ -36,10 +36,17 @@ Follow the provided step-by-step instructions in the document for setup and conf
 
 ![alt text](image-one.jpg)
 
-Click **Sign in** if you have an account or Create an Account . fill in your details to create an account.
+Click **Sign in** if you have an account or Create an Account . fill in your details to create an account.        
+
 Once fully setup, you should see a screen exactly like what we have below
 
 ![alt text](image-two.jpg)
+
+
+
+Follow the arrow and search for the domain name of your choice and purchase it.
+
+For example my domain name for this project is ***ats-victorycenter.com*** , once selected, click on **make it yours** below to own it. 
 
 
 ### Phase 2: Configuring Nameservers
