@@ -49,6 +49,10 @@ Follow the arrow and search for the domain name of your choice and purchase it.
 For example my domain name for this project is ***ats-victorycenter.com*** , once selected, click on **make it yours** below to own it. 
 
 
+![alt text](image-three.jpg)
+
+
+
 ### Phase 2: Configuring Nameservers
 Generate nameservers using AWS Route53 and update them in your GoDaddy account. Detailed screenshots are provided in the document.
 
