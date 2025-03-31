@@ -37,6 +37,10 @@ Follow the provided step-by-step instructions in the document for setup and conf
 ![alt text](image-one.jpg)
 
 Click **Sign in** if you have an account or Create an Account . fill in your details to create an account.
+Once fully setup, you should see a screen exactly like what we have below
+
+![alt text](image-two.jpg)
+
 
 ### Phase 2: Configuring Nameservers
 Generate nameservers using AWS Route53 and update them in your GoDaddy account. Detailed screenshots are provided in the document.
