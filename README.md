@@ -52,6 +52,26 @@ For example my domain name for this project is ***ats-victorycenter.com*** , onc
 ![alt text](image-three.jpg)
 
 
+•	After you must have purchased the domain name, click ***Domain*** on the left rail. 
+
+![alt text](image-four.jpg)
+
+
+•	Then click ***DNS***
+
+![alt text](image-five.jpg)
+
+
+•	Click ***Nameserver***
+
+![alt text](image-six.jpg)
+
+
+•	Click Change ***Nameservers***
+
+![alt text](image-seven.jpg)
+
+
 
 ### Phase 2: Configuring Nameservers
 Generate nameservers using AWS Route53 and update them in your GoDaddy account. Detailed screenshots are provided in the document.
