@@ -72,8 +72,21 @@ For example my domain name for this project is ***ats-victorycenter.com*** , onc
 ![alt text](image-seven.jpg)
 
 
-•	At this stage, your setup will not yet include Nameservers. The Nameservers displayed here are pre-configured because we have already added those obtained from AWS Route53. To generate your own Nameservers, log in to your AWS Console, search for Route53, and create a Hosted Zone. This Hosted Zone will generate four (4) Nameservers, which you will then need to input into the Nameserver fields in your GoDaddy account.
+•	At this stage, your setup will not yet include Nameservers. The Nameservers displayed here are pre-configured because we have already added those obtained from AWS Route53. 
+
+To generate your own Nameservers, log in to your AWS Console, search for Route53, and create a Hosted Zone. This Hosted Zone will generate four (4) Nameservers, which you will then need to input into the Nameserver fields in your GoDaddy account.
+
 •	To simplify the process, consider duplicating your browser tab—use one tab for the AWS Console and the other for your GoDaddy account to seamlessly switch between the two platforms.
+
+•	Click on get started as shown in the screenshot below.
+
+![alt text](image-eleven.jpg)
+
+
+• Input your domain name in the box, but leave all settings as default. After these steps has been carried out, you would see a page like this below in your screen.
+
+• Checkbox  the domain name row that has NS in the table as shown below. Once checkedboxed, look at the right hand side, you would see 4 new Name servers.
+
 
 ### Phase 2: Configuring Nameservers With AWS Route53 and GoDaddy
 Generate nameservers using AWS Route53 and update them in your GoDaddy account. Detailed screenshots are provided in the document.
