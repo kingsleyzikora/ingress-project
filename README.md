@@ -74,18 +74,11 @@ For example my domain name for this project is ***ats-victorycenter.com*** , onc
 
 •	At this stage, your setup will not yet include Nameservers. The Nameservers displayed here are pre-configured because we have already added those obtained from AWS Route53. 
 
-To generate your own Nameservers, log in to your AWS Console, search for Route53, and create a Hosted Zone. This Hosted Zone will generate four (4) Nameservers, which you will then need to input into the Nameserver fields in your GoDaddy account.
+• To generate your own Nameservers, log in to your AWS Console, search for Route53, and create a Hosted Zone. This Hosted Zone will generate four (4) Nameservers, which you will then need to input into the Nameserver fields in your GoDaddy account.
 
 •	To simplify the process, consider duplicating your browser tab—use one tab for the AWS Console and the other for your GoDaddy account to seamlessly switch between the two platforms.
 
-•	Click on get started as shown in the screenshot below.
 
-![alt text](image-eleven.jpg)
-
-
-• Input your domain name in the box, but leave all settings as default. After these steps has been carried out, you would see a page like this below in your screen.
-
-• Checkbox  the domain name row that has NS in the table as shown below. Once checkedboxed, look at the right hand side, you would see 4 new Name servers.
 
 
 ### Phase 2: Configuring Nameservers With AWS Route53 and GoDaddy
@@ -104,5 +97,88 @@ Generate nameservers using AWS Route53 and update them in your GoDaddy account. 
 
 ![alt text](image-ten.jpg)
 
+•	Click on get started as shown in the screenshot below.
+
+![alt text](image-eleven.jpg)
+
+
+• Input your domain name in the box, but leave all settings as default. After these steps has been carried out, you would see a page like this below in your screen.
+
+• Checkbox  the domain name row that has NS in the table as shown below. Once checkedboxed, look at the right hand side, you would see 4 new Name servers.
+
+![alt text](image-12.jpg)
+
+
+•	Copy your  four  name servers that came with your domain name after you checkbox it.
+•	 Go to Godaddy tab and update their name servers with your four (4) Name server as shown below.
+
+![alt text](image-thirteen.jpg)
+
+•	Click on ***change Nameserver***, include your own Nameservers gotten from AWS Route53.
+
+![alt text](14.jpg)
+
+• Include your personal four (4) Nameservers gotten from AWS Route53 into the four slots and then click save below.
+
+• Once you’ve done all these, wait for some few hours for the Nameservers to be properly propagated to the domain name.
+
+• Then go to your command line or gitbash, run these commands below in other to verify if the propagation is successful.
+
+• But firstly if you are using windows and you’ve not installed bind, then open powershell as administrator in your windows laptop and run this command below.
+
+***FOR WINDOWS ONLY**
+
+```bash
+•	choco install –y bind-toolsonly
+```
+
+---
+
+This command above will install bind and once it is successfully installed, run the next command 
+
+```bash
+•	dig ns < your domain name > 
+```
+
+---  
+
+For example: how to use the above command, let’s say your domain name is “ats-victorycenter.org”, then your command should look like this >>> dig ns ats-victorycenter.org
+
+NOTE: dig means “domain information grouper”. This helps to give you information on your domain
+
+![alt text](15.jpg)
+
+
+Your screen should look exactly like this, showing all your four (4) Nameservers
+
+ **FOR MacOS ONLY**
+
+```bash
+•	brew install bind
+```
+---
+
+This command above will install bind and once it is successfully installed, run the next command 
+
+```bash
+•	dig ns < your domain name > 
+```
+---
+
+For example: how to use the above command, let’s say your domain name is ***“ats-victorycenter.org”***, 
+then your command should look like this >>> **dig ns ats-victorycenter.org**
+
 ### Phase 3: Creating the EKS Cluster
 Use the Terraform scripts to deploy your cluster. The repository includes the following file structure:
+
+•   For this hands on we are going to make use of terraform to deploy our EKS cluster and the pods that has the image of the application.
+
+•	Open VScode on your local machine, and create folders and file that would contain the terraform script to deploy your EKS cluster. 
+
+•   From the tree image, below showcases exactly how your **file structure** should look like.
+
+**FILE STRUCTURE BLOCKS**
+
+![alt text](16.png)
+
+Let’s create all the folders and files using the structure above:
