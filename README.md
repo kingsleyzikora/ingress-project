@@ -129,7 +129,7 @@ Generate nameservers using AWS Route53 and update them in your GoDaddy account. 
 ***FOR WINDOWS ONLY**
 
 ```bash
-•	choco install –y bind-toolsonly
+	choco install –y bind-toolsonly
 ```
 
 ---
@@ -137,7 +137,7 @@ Generate nameservers using AWS Route53 and update them in your GoDaddy account. 
 This command above will install bind and once it is successfully installed, run the next command 
 
 ```bash
-•	dig ns < your domain name > 
+	dig ns < your domain name > 
 ```
 
 ---  
@@ -154,14 +154,14 @@ Your screen should look exactly like this, showing all your four (4) Nameservers
  **FOR MacOS ONLY**
 
 ```bash
-•	brew install bind
+	brew install bind
 ```
 ---
 
 This command above will install bind and once it is successfully installed, run the next command 
 
 ```bash
-•	dig ns < your domain name > 
+	dig ns < your domain name > 
 ```
 ---
 
@@ -187,29 +187,32 @@ Let’s create all the folders and files using the structure above:
 **COMMANDS TO CREATE THE FILE STRUCTURE**
 
 ```bash
-•    mkdir < inlcude your directory/folder name > 
+   mkdir < inlcude your directory/folder name > 
 ```
----
 For example >>> mkdir Mario-game-kubernetes-deployment
 
+---
+
 ```bash
-•    cd < your own directory name >
+   cd < your own directory name >
 ```
 For example >>> cd Mario-game-kubernetes-deployment
 
+---
+
 ```bash
-•  	mkdir EKS-TF
-    •	cd EKS-TF
+  	mkdir EKS-TF
+    cd EKS-TF
 ```
 ---
 
 ```bash
-•    touch main.tf  provider.tf
+    touch main.tf  provider.tf
 ```
 ---
 
 ```bash
- 	cd ..
+ 	 cd ..
     touch README.md
     touch  deployment.yaml
 	touch  ingress.yaml
