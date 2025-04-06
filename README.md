@@ -129,7 +129,7 @@ Generate nameservers using AWS Route53 and update them in your GoDaddy account. 
 ***FOR WINDOWS ONLY**
 
 ```bash
-	choco install –y bind-toolsonly
+choco install –y bind-toolsonly
 ```
 
 ---
@@ -137,7 +137,7 @@ Generate nameservers using AWS Route53 and update them in your GoDaddy account. 
 This command above will install bind and once it is successfully installed, run the next command 
 
 ```bash
-	dig ns < your domain name > 
+dig ns < your domain name > 
 ```
 
 ---  
@@ -154,14 +154,14 @@ Your screen should look exactly like this, showing all your four (4) Nameservers
  **FOR MacOS ONLY**
 
 ```bash
-	brew install bind
+brew install bind
 ```
 ---
 
 This command above will install bind and once it is successfully installed, run the next command 
 
 ```bash
-	dig ns < your domain name > 
+dig ns < your domain name > 
 ```
 ---
 
@@ -181,40 +181,32 @@ Use the Terraform scripts to deploy your cluster. The repository includes the fo
 
 ![alt text](16.png)
 
-Let’s create all the folders and files using the structure above:
 
 
-**COMMANDS TO CREATE THE FILE STRUCTURE**
+**COMMANDS TO DEPLOY YOUR CLUSTER**
+
+***NOTE***: First switch your directory location to EKS-TF, because this is where the terraform scripts to create your cluster is in.
+
 
 ```bash
-   mkdir < inlcude your directory/folder name > 
-```
-For example >>> mkdir Mario-game-kubernetes-deployment
-
----
-
-```bash
-   cd < your own directory name >
-```
-For example >>> cd Mario-game-kubernetes-deployment
-
----
-
-```bash
-  	mkdir EKS-TF
-    cd EKS-TF
+cd EKS-TF
 ```
 ---
 
+To deploy your EKS cluster, run the following commands below;
 ```bash
-    touch main.tf  provider.tf
+terraform init
+```
+
+![alt text](image-17.jpg)
+
+
+
+```bash
+terraform plan
+terraform apply –auto-approve
 ```
 ---
 
-```bash
-cd ..
-touch README.md
-touch  deployment.yaml
-touch  ingress.yaml
-touch service.yaml
-```
+
+![alt text](image-18.png)
