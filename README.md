@@ -182,3 +182,36 @@ Use the Terraform scripts to deploy your cluster. The repository includes the fo
 ![alt text](16.png)
 
 Let’s create all the folders and files using the structure above:
+
+
+**COMMANDS TO CREATE THE FILE STRUCTURE**
+
+```bash
+•    mkdir < inlcude your directory/folder name > 
+```
+---
+For example >>> mkdir Mario-game-kubernetes-deployment
+
+```bash
+•    cd < your own directory name >
+```
+For example >>> cd Mario-game-kubernetes-deployment
+
+```bash
+•  	mkdir EKS-TF
+    •	cd EKS-TF
+```
+---
+
+```bash
+•    touch main.tf  provider.tf
+```
+---
+
+```bash
+ 	cd ..
+    touch README.md
+    touch  deployment.yaml
+	touch  ingress.yaml
+	touch service.yaml
+```
