@@ -212,9 +212,9 @@ For example >>> cd Mario-game-kubernetes-deployment
 ---
 
 ```bash
- 	 cd ..
-    touch README.md
-    touch  deployment.yaml
-	touch  ingress.yaml
-	touch service.yaml
+cd ..
+touch README.md
+touch  deployment.yaml
+touch  ingress.yaml
+touch service.yaml
 ```
