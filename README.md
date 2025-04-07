@@ -210,3 +210,19 @@ terraform apply –auto-approve
 
 
 ![alt text](image-18.png)
+
+
+
+
+**PHASE 4: AWS CERTIFICATE MANAGER SETUP**
+
+•	Go back to AWS console tab, search for CERTIFICATE MANAGER, click certificate manager
+
+![alt text](image-19.jpg)
+
+
+
+
+•	Click on Request 
+
+![alt text](image-20.jpg)
