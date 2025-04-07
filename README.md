@@ -230,4 +230,23 @@ terraform apply –auto-approve
 
 ------
 
+•	Leave everything as default and click ***Next***
+
+![alt text](image-21.jpg)
+
+
+•	Include your domain name in this format < *. Your domain name >. For example >>> *.ats-victorycenter.org
+•	Click **Add another name to this certificate**. The format shouldn’t have the asterix and dot, rather it should look like this < your domain name >. For example >>> ats-victorycenter.org
+
+![alt text](image-22.jpg)
+
+-------
+
+![alt text](image-23.jpg)
+
+------
+
+•	Click **Request** at the right hand base.
+
+![alt text](image-24.jpg)
 
