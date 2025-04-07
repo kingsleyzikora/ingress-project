@@ -264,13 +264,13 @@ terraform apply –auto-approve
 
 ![alt text](image-26.jpg)
 
-----
+--
 
 Click ***list certificates*** on the left rail to verify if the certificate has been issued. And once you check box 	the certificate, you will an information saying ***“issued”***.
 
 ![alt text](image-27.jpg)
 
---------
+--
 
 
 
@@ -298,7 +298,7 @@ The image below shows the command syntax
 
 ![alt text](image-29.jpg)
 
----
+--
 
 To update your kubeconfig file, copy and paste this command  below on your command line
 
@@ -341,7 +341,7 @@ below is a screenshot of what to expect after running the above commands
 
 ![alt text](image-32.jpg)
 
----
+--
 
 
 
@@ -350,3 +350,16 @@ below is a screenshot of what to expect after running the above commands
 **PHASE 6:  AWS LOAD BALANCER SET UP**
 
 •	Go to AWS console and search for load balancer as shown in the image below and click on it.
+
+![alt text](image-33.jpg)
+--
+
+•	Select the load balancer that was created  as shown in the image below
+
+![alt text](image-34.jpg)
+--
+
+•	Click on manage listeners as shown below
+
+![alt text](image-35.jpg)
+--
