@@ -220,9 +220,14 @@ terraform apply –auto-approve
 
 ![alt text](image-19.jpg)
 
+-----
 
 
 
 •	Click on Request 
 
 ![alt text](image-20.jpg)
+
+------
+
+
