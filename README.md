@@ -284,6 +284,11 @@ Click ***list certificates*** on the left rail to verify if the certificate has 
 
  To interact  with the cluster, you have to first authenticate using this commands below.
 
+
+ **COMMANDS BELOW**
+
+ To authenticate into the cluster, copy and paste this command below command line.
+
  ```bash
 eksctl utils associate-iam-oidc-provider \     --region us-east-2 \     --cluster EKS_CLOUD \     --approve
 ```
@@ -316,3 +321,32 @@ helm install nginx-ingress ingress-nginx/ingress-nginx
 ---
 
 below is a screenshot of what to expect after installing your nginx ingress controller using helm
+
+![alt text](image-31.jpg)
+--
+
+
+Once your Nginx ingress controller is set up, run this command below one after the other to deploy your resources into the cluster.
+
+```bash
+cd ..
+kubectl apply –f deployment.yaml
+kubectl apply –f service.yaml
+kubectl get svc
+
+```
+---
+
+below is a screenshot of what to expect after running the above commands
+
+![alt text](image-32.jpg)
+
+---
+
+
+
+
+
+**PHASE 6:  AWS LOAD BALANCER SET UP**
+
+•	Go to AWS console and search for load balancer as shown in the image below and click on it.
