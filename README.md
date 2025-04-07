@@ -236,7 +236,8 @@ terraform apply –auto-approve
 
 
 •	Include your domain name in this format < *. Your domain name >. For example >>> *.ats-victorycenter.org
-•	Click **Add another name to this certificate**. The format shouldn’t have the asterix and dot, rather it should look like this < your domain name >. For example >>> ats-victorycenter.org
+•	Click **Add another name to this certificate**. 
+•   The format shouldn’t have the asterix and dot, rather it should look like this < your domain name >. For example >>> ats-victorycenter.org
 
 ![alt text](image-22.jpg)
 
@@ -250,3 +251,68 @@ terraform apply –auto-approve
 
 ![alt text](image-24.jpg)
 
+------------
+
+•	Click on ***Create records in route 53***
+
+![alt text](image-25.jpg)
+
+----
+
+
+•	Click ***Create records*** below in yellow frame
+
+![alt text](image-26.jpg)
+
+----
+
+Click ***list certificates*** on the left rail to verify if the certificate has been issued. And once you check box 	the certificate, you will an information saying ***“issued”***.
+
+![alt text](image-27.jpg)
+
+--------
+
+
+
+
+ **PHASE 5:     DEPLOY NGINX INGRESS CONTROLLER**
+
+ Once your cluster is been created successfully, you would notice that it created 8 resources. Below is a screenshot of what you are expected to have. You would see **8 added**
+
+ ![alt text](image-28.jpg)
+ --
+
+ To interact  with the cluster, you have to first authenticate using this commands below.
+
+ ```bash
+eksctl utils associate-iam-oidc-provider \     --region us-east-2 \     --cluster EKS_CLOUD \     --approve
+```
+---
+
+The image below shows the command syntax
+
+![alt text](image-29.jpg)
+
+---
+
+To update your kubeconfig file, copy and paste this command  below on your command line
+
+```bash
+aws eks update-kubeconfig --name EKS_CLOUD --region us-east-2
+```
+---
+
+![alt text](image-30.jpg)
+--
+
+We made use of Nginx ingress controller to create a load balancer on AWS. Use this kubernetes Helm command below  to deploy the ingress controller load balancer
+
+```bash
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm repo update
+helm install nginx-ingress ingress-nginx/ingress-nginx
+
+```
+---
+
+below is a screenshot of what to expect after installing your nginx ingress controller using helm
