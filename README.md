@@ -442,7 +442,6 @@ For this hands on, we deployed ours in us-east-2 (Ohio). As shown in the screens
 •	Run this command below to deploy the file, on your terminal and press ENTER as shown in the screenshot below
 
 ```bash
-cd ..
 kubectl apply –f ingress.yaml
 
 ```
