@@ -297,7 +297,6 @@ eksctl utils associate-iam-oidc-provider \     --region us-east-2 \     --cluste
 The image below shows the command syntax
 
 ![alt text](image-29.jpg)
-
 --
 
 To update your kubeconfig file, copy and paste this command  below on your command line
@@ -359,7 +358,111 @@ below is a screenshot of what to expect after running the above commands
 ![alt text](image-34.jpg)
 --
 
-•	Click on manage listeners as shown below
+•	Click on **manage listeners** as shown below
 
 ![alt text](image-35.jpg)
 --
+
+
+•	From the image below, you would see all the listeners.
+
+![alt text](image-36.jpg)
+--
+
+•	You should have exactly this above. So we would be making changes to the listener protocol column, instance protocol column and instance port column. Make sure yours is configures exactly as the image below. 
+
+	Note: The image below has been properly configures, all you need to do is to update yours to look like exactly like the screenshot below.
+
+![alt text](image-37.jpg)
+--
+
+
+•	From the screenshot above, you would notice we circled Default SSL/TLS certificate, follow the arroe and click edit . 
+
+•	Once clicked on edit, click save changes below as shown in the screenshot below
+
+
+![alt text](image-38.jpg)
+--
+
+•	Click on save changes again below as shown in the screenshot
+
+
+![alt text](image-39.jpg)
+--
+
+•	Search for Route53 and click on it as shown in the image below
+
+![alt text](image-40.jpg)
+--
+
+
+•	Click on the big figure 1 as shown in the screenshot below
+
+
+![alt text](image-41.jpg)
+--
+
+
+•	Follow the arrow and Click on the domain name as shown in the screenshot below
+
+
+![alt text](image-42.jpg)
+--
+
+•	Click on create records in yellow as shown in the screenshot below
+
+
+![alt text](image-43.jpg)
+--
+
+
+•	Toggle the Alias button, you would see three options which are Route traffic, choose region and choose load balancer as shown in the screenshot below.
+
+•	On Route traffic, click the drop down and select Alias to Application and Classic Load Balancer
+•	Choose region, click the drop down, search for the region at which your cluster was deployed. 
+For this hands on, we deployed ours in us-east-2 (Ohio). As shown in the screenshot below.
+
+•	Choose Load Balancer, click the drop down and select the load balancer we created using Nginx controller. As shown in the screenshot below.
+
+
+![alt text](image-44.jpg)
+--
+
+
+•	Click on create records below.
+
+
+
+
+**PHASE 7: DEPLOYING THE INGRESS YAML FILE**
+
+•	Go back to your terminal and lets deploy the last piece which is the ingress.yaml file
+
+•	Run this command below to deploy the file, on your terminal and press ENTER as shown in the screenshot below
+
+```bash
+cd ..
+kubectl apply –f ingress.yaml
+
+```
+---
+
+
+![alt text](image-45.jpg)
+--
+
+
+•	Now go to your browser and input your domain name. for example, this is our domain name **“ats-victorycenter.org”** as seen in the image below.
+
+
+![alt text](image-46.jpg)
+--
+
+
+Once you see this image on your screen and the connection is secured, you’ve achieved the whole aim of the project. 
+
+
+**CONGRATULATIONS!!!**
+
+
